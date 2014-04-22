@@ -56,7 +56,7 @@ public class ProcessContextManager
     {
         private DrxCdiBusinessProcessEvent event = null;
         private ProcessInstance processInstance = null;
-        private final ActivityInstance activityInstance = null;
+        private ActivityInstance activityInstance = null;
 
         public ProcessContext(final DrxCdiBusinessProcessEvent event)
         {
@@ -67,8 +67,8 @@ public class ProcessContextManager
                             .processInstanceId(event.getProcessInstanceId()).singleResult();
 
             // remove this line to make the Unit test work
-//            this.activityInstance =
-//                    ProcessContextManager.this.runtimeService.getActivityInstance(event.getProcessInstanceId());
+            this.activityInstance =
+                    ProcessContextManager.this.runtimeService.getActivityInstance(event.getProcessInstanceId());
         }
 
         public ProcessInstance getProcessInstance()
