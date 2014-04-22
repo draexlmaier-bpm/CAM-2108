@@ -1,0 +1,7 @@
+.svn
+*.~$lock
+*target
+.classpath
+.launch
+.project
+.settings

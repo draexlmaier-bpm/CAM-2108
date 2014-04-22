@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.1">
+	<ear-subdeployments-isolated>false</ear-subdeployments-isolated>
+	<deployment>
+		<dependencies>
+			<module name="javax.annotation.api" />
+			<module name="javax.enterprise.api" />
+			<module name="javax.inject.api" />
+			<module name="javax.interceptor.api" />
+			<module name="javax.validation.api" />
+			
+			<module name="org.jboss.logging" />
+			<module name="org.jboss.modules" />
+
+			<module name="javax.ejb.api" /> <!-- For EJB application -->
+		</dependencies>
+	</deployment>
+</jboss-deployment-structure>
